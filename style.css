@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 250px;
+    color:#333;
+}
+.button {
+    position: absolute;
+    top: 6px;
+    right: 50px;
+    z-index: 1000;
+}
+.button a {
+    text-decoration: none;
+    font-size: 50px; 
+}
+.btn-open:after {
+    font-family: "fontAwesome";
+    content: "\f0c9";
+    color: #333;
+    transition: color .2s;
+}
+.btn-open:hover:after {
+    color: #1c9769;
+}
+.btn-close:after {
+    font-family: "fontAwesome";
+    content: "\f00d";
+    color: #333;
+    transition: color .2s;
+}
+.btn-close:hover:after {
+    color: #1c9769;
+}
+.overlay {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #f2d50a;
+}
+.nav-container{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.nav-col{
+    padding: 200px 0;
+    width: 26%;
+    display: inline-block;
+}
+.nav-col h2{
+    font-size: 35px;
+    color: #333;
+    
+}
+.nav-col ul{
+    list-style: none;
+    padding-top: 30px ;
+}
+.nav-col a{
+    text-decoration: none;
+    color: #f0f0f0;
+    display: block;
+    padding: 8px 0;
+    font-size: 18px;
+    transition: color .2s;
+}
+.nav-col a:hover{
+    color: #1c9769;
+}
